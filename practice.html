@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCSS</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        input[type=file]::-webkit-file-upload-button,
+        input[type=file]::file-selector-button {
+            color: white;
+            background-color: rgb(61, 61, 61);
+            font-weight: 500;
+            font-size: 1.4rem;
+            cursor: pointer;
+            border: none;
+            padding: 3 4 3 8;
+          
+        }
+    </style>
+</head>
+
+<body>
+    <label class="text-sm font-medium text-gray-900 block mb-2" for="user_avatar">Upload file</label>
+    <input aria-describedby="user_avatar_help" id="user_avatar" type="file"
+        class="block w-full cursor-pointer bg-gray-50 border border-gray-300 text-gray-900 focus:outline-none focus:border-transparent text-sm rounded-lg">
+    <div id="user_avatar_help" class="mt-1 text-sm text-gray-500">A profile picture is useful to confirm
+</body>
+
+</html>

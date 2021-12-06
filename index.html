@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form 1</title>
+  <!-- Tailwind CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.6/tailwind.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/12376f4e68.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-grey-700">
+  <nav class="flex items-center justify-between flex-wrap bg-blue-600 p-6">
+    <div class="container mx-auto flex">
+      <div class="flex items-center flex-shrink-0 text-white mr-6">
+        <img src="assets/img/must-logo.png" width="40px" height="40px" alt="must-logo">
+        <!-- <span class="font-semibold text-xl tracking-tight px-4 uppercase">Online Hostel Accomodation System</span> -->
+
+      </div>
+      <div class="block lg:hidden">
+        <button
+          class="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+          <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <title>Menu</title>
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+          </svg>
+        </button>
+      </div>
+      <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
+        <div class="text-sm lg:flex-grow">
+        </div>
+        <div>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Home
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            About
+          </a>
+          <a href="#responsive-header" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Contact Us
+          </a>
+          <a href="student_login.html" class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+            Login
+          </a>
+          <a href="index.html"
+            class="inline-block text-md p-4 leading-none border rounded-lg text-white border-white hover:border-transparent hover:text-blue-600 hover:bg-white mt-4 lg:mt-0">
+            Apply Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- component -->
+
+  <div class="h-screen bg-gray-300  flex justify-center items-center">
+    <!-- Start From Here -->
+    <div
+      class="bg-white rounded-lg w-2/3 flex flex-col justify-center sm:justify-start items-center sm:items-start sm:flex-row space-x-2 p-8  ">
+      <section class="container mx-auto px-4">
+        <div class="p-5">
+          <div class="mt-1 p-4">
+            <div>
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full flex-1 mx-2 svelte-1l8159u">
+                  <label class="font-bold text-gray-600 text-xs leading-8 uppercase h-6 mx-2 mt-3">Full Name</label>
+                  <div class="bg-white my-2 p-1 flex border border-blue-400 rounded svelte-1l8159u">
+                    <input placeholder="First Name" class="p-1 px-2 appearance-none outline-none w-full text-gray-800">
+                  </div>
+                </div>
+                <div class="w-full flex-1 mx-2 svelte-1l8159u">
+                  <label class="font-bold text-gray-600 text-xs leading-8 uppercase h-6 mx-2 mt-3">Reg Number</label>
+                  <div class="bg-white my-2 p-1 flex border border-blue-400 rounded svelte-1l8159u">
+                    <input placeholder="Reg Number" class="p-1 px-2 appearance-none outline-none w-full text-gray-800">
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full mx-2 flex-1 svelte-1l8159u">
+                  <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase"> Your Email</div>
+                  <div class="bg-white my-2 p-1 flex border border-blue-400 rounded svelte-1l8159u">
+                    <input placeholder="regnumber@must.ac.mw"
+                      class="p-1 px-2 appearance-none outline-none w-full text-gray-800">
+                  </div>
+                </div>
+                <div class="w-full mx-2 flex-1">
+                  <div class="mt-3">
+                    <label for="cars" class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">Choose your
+                      program</label>
+                  </div>
+                  <select id="cars" name="cars" class="w-full py-3 px-2 rounded">
+                    <option value="volvo">Bsc Business Information Technology</option>
+                    <option value="saab">Bsc Computer Systems and Security</option>
+                    <option value="fiat">Hons Biomedical Engineering</option>
+                    <option value="audi">Hons Chemical Engineering</option>
+                  </select>
+                </div>
+              </div>
+              <div class="flex flex-col md:flex-row">
+                <div class="w-full mx-2 flex-1">
+                  <div class="mt-3">
+                    <label for="cars" class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">Year of
+                      Study</label>
+                  </div>
+                  <select id="cars" name="cars" class="w-full py-3 px-2 rounded">
+                    <option value="volvo">Year 1</option>
+                    <option value="saab">Year 2</option>
+                    <option value="fiat">Year 3</option>
+                    <option value="audi">Year 4</option>
+                    <option value="audi">Year 5</option>
+                  </select>
+                </div>
+                <div class="w-full mx-2 flex-1 svelte-1l8159u">
+                  <div class="font-bold h-6 mt-3 text-gray-600 text-xs leading-8 uppercase">Upload proof of payment
+                  </div>
+                  <div class="bg-white my-2 p-1 flex border border-blue-400 rounded svelte-1l8159u">
+                    <input type="file" id="deposits" class="p-1 px-2 appearance-none outline-none w-full text-gray-800">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex p-2 mt-4 items-center">
+              <button class="flex-auto flex flex-row-reverse text-base w-2/3  ml-2  hover:scale-110 focus:outline-none flex justify-center px-4 py-2 m-2 rounded font-bold cursor-pointer 
+                    hover:bg-blue-700  
+                    bg-blue-600 
+                    text-blue-100 
+                    border duration-200 ease-in-out 
+                    border-blue-600 transition
+                    ">
+
+                Submit
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
